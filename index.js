@@ -6,10 +6,11 @@ const admin = require('firebase-admin');
 // Load Firebase Service Account Key
 const admin = require("firebase-admin");
 
-const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);;
+const serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://your-project.firebaseio.com"
 });
 
 
