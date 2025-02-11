@@ -16,7 +16,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const collectionName = 'items'; // Change this to your Firestore collection name
+const collectionName = 'items'; 
 
 // ✅ Create (POST) - Add a new item
 app.post('/items', async (req, res) => {
