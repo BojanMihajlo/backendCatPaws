@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const admin = require('firebase-admin');
 
 // Load Firebase Service Account Key
-const admin = require("firebase-admin");
 
 const serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS);
 
